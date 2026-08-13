@@ -2,6 +2,8 @@
 
 Next.js 16.2.12 · React 19.2.8 · Node 22+ · production build.
 
+> **Upstream:** issue [react/react#37288](https://github.com/react/react/issues/37288) · fix PR [react/react#37289](https://github.com/react/react/pull/37289)
+
 A `force-dynamic` async Server Component SSR-fetches a slow upstream and renders a large
 list. Under load where clients **disconnect mid-render**, each **completed** render's fetch
 response is retained and the heap grows without bound (until OOM). Only `--stack-trace-limit=0`
